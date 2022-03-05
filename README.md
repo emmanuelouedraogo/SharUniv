@@ -1,0 +1,1 @@
+Ceci est un projet de création de site web. L'objetif principal est la mise en relation entre les professionnels et les clients. Il se veut être un trait d'union entre besoins et services.
