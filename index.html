@@ -1,44 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <!--Require meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sharing Universe</title>
+    
     <link rel="stylesheet" href="fontawesome/css/all.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree+Serif">
-	<link rel="stylesheet" href="https://fontawesome.com/v6/icons/circle-phone?s=solid">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet"  type="text/css" href="css/sharuniv.css"/>
-    <script src="js/sharuniv.js"> </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree+Serif">
+    <link rel="stylesheet" href="https://fontawesome.com/v6/icons/circle-phone?s=solid">
+      <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet"  type="text/css" href="css/sharuniv.css"/>
+    <title>Sharing Universe</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Bootstrap CSS-->
 </head>
-<body>
-    <head>
-         
-    </head>
-    <body>
-    <header>
+<body id="basic-setup">
+    <header class="page-header">
         <img src="img/logo.PNG" alt="logo">
         <h1>Sharing Universe</h1>
-        <p> Ce espace à pour vocation de susciter un élan de partage qui, nous sommes convaincu, crée un monde meilleur</p> 
+        <p class="object"> Dévéloppement Intégral</p> 
+        <!-- <h2>La planète Terre</h2>
+        <p>Publié le <time datetime="2017-10-04">4 octobre 2017</time> par Jeanne Smith</p> -->
 
-    </header>  
+        <!-- barre de navigation avec ses parametres (largeur, clair, background léger)-->
+      </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <!-- <a class="navbar-brand" href="#" id="a">
+              <-- <img src="img/typentrp.PNG" height="50px"> -->
+            </a> -->
+            <!-- <a class="navbar-brand" href="#">
+              <img src="img/logo.PNG" height="50px">
+            </a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- collapse va coller les éléments de la nav -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!-- ml = margin-left -->
+              <ul class="navbar-nav ml-auto">
+                <!-- nav item pour chaque élément du menu -->
+                <li class="nav-item">
+                  <a class="nav-link" href="../1a_hackthon/brief.html">Accueil<span class="sr-only">(current)</span></a>
+                </li>
+               <li class="nav-item">
+                <!-- design des liens version bootstrap -->
+               <a class="nav-link" href="../1a_hackthon/r%C3%A8glement.html">Offres</a>
+               </li>
+                <li class="nav-item">
+                <a class="nav-link" href="../1a_hackthon/equipes.html">Demandes</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Market</a>
+                </li>
+                <!-- dropdown menu déroulant bootstrap -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Partages</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <!-- on peut faire des liens avec un style bootstrap dropdown-item pour les bouttons de menu-->
+                    <a class="dropdown-item" href="#">infos</a>
+                    <a class="dropdown-item" href="#">Blog</a>
+                    <a class="dropdown-item" href="#">vidéos</a>
+                    <a class="dropdown-item" href="#">images photos</a>
+                    <a class="dropdown-item" href="#">Investigations</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Autres</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <!-- on peut désactiver un boutton avec disabled -->
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              <!--form en inline block et my pour les espace -->
+              <form class="form-inline my-2 my-lg-0">
+                <!-- mr = margin-right form-control est le style des champs par défaut bootstrap -->
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <!-- boutton avec contour margin top et bottom de 0 -->
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        <input type="range" id="weight" name="weight" min="1" max="1000" />
+    <label for="weight">Weight</label>
+</header>
+<div class="container">
+    <p class="sample">...Avec Sharing Universe, les offres et les besoins se rencontrent</p>
+</div>
+
+<!-- slider bootstrap -->  
     <main> 
-        
+        <p class='text'>Sharing Universe est une plateforme qui permet à chaque personne physique ou moral de
+          partager ou de trouver. C'est un accélérateur de dévéloppement intégral : social, économique,culturelle et spirituel. 
+          Cette plateforme e-learning ne s'intéresse à tout ce qui est légal.
+          Tout est sécurisé et vérifié à la loupe. Sharing Universe,vendez et acheter, donnez et recevez en toute sécurité. Ce espace à pour vocation de susciter un élan de partage qui, nous sommes convaincu, crée un monde meilleur.</p>
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <!-- w = width d = display -->
+                <img src="img/img2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/img3.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/img4.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/img5.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+              <img src="img/img6.png" class="d-block w-100" alt="...">
+              </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <!-- screen reader masque un élément sur tous les appareils à l' exception des lecteurs d'écran -->
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <!-- screen reader masque un élément sur tous les appareils à l' exception des lecteurs d'écran -->
+            <span class="sr-only">Next</span>
+          </a>
+          </div>
     </main>
-    <footer> 
-         <section>*******</section>
         <footer class="footer-distributed">
-        
                     <div class="footer-left">
         
                         <h3>Sharing<span>Universe</span></h3>
-                        <video controls muted posted="muten-roshi.jpg">
+                        <!-- <video controls muted posted="muten-roshi.jpg">
                             <source src="movies/logo.mp4" type="video/mp4">
                             <source src="movies/logo.webm" type="video/webm">
                             <track kind="subtitles" src="logo.vtt" srclang="fr">
-                        </video> 
+                        </video>  -->
         
                         <p class="footer-links">
                             <a href="#" class="link-1">Home</a>
@@ -95,7 +204,7 @@
                     </div>
         
                 </footer>
-    </footer>
+    <script type="text/javascript" src="js/sharuniv.js"> </script>
     </body>
 </body>
 </html>
